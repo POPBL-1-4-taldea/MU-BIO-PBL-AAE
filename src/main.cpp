@@ -20,6 +20,9 @@ int main(int argc, char ** argv) {
 	}
 	float maximumAngularVelocity = computeMaximumAngularVelocity(points, numberOfPoints);
 	
+	//Como el video esta grabado en camara lenta, 8 veces mas lento que de normal, multiplicamos por ocho lo calculado
+	maximumAngularVelocity = 8 * maximumAngularVelocity;
+
 	printf("Maximum angular velocity: %f\n", maximumAngularVelocity);
 
 	freePoints(&points);
