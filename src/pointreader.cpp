@@ -23,7 +23,7 @@ int main(int argc, char** argv)
 	}
 	float maximumAngularVelocity = computeMaximumAngularVelocity(points, numberOfPoints);
 
-	//Como el video esta grabado en camara lenta, 8 veces mas lento delo normal, multiplicaremos el resultado por 8
+	//Como el video esta grabado en camara lenta, 8 veces mas lento de lo normal, multiplicaremos el resultado por 8
 	//Aparte, vamos a pasar de radian/segundo a rpm, para ello, lo multiplicaremos por 60/2pi
 	maximumAngularVelocity = maximumAngularVelocity * 8 * (60 / (2 * 3.14));
 
